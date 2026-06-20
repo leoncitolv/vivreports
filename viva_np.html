@@ -600,6 +600,46 @@ thead tr{background:rgba(11,67,36,.94)!important;}tbody tr:hover{background:rgba
 }
 </style>
 
+
+<style id="laraclv-signature-style">
+  .laraclv-signature {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    margin: 28px auto calc(18px + env(safe-area-inset-bottom, 0px));
+    padding: 10px 12px 4px;
+    color: var(--muted, var(--text-sub, rgba(255,255,255,.58)));
+    opacity: .86;
+    user-select: none;
+    pointer-events: none;
+  }
+  .laraclv-signature .laraclv-by {
+    display: block;
+    font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
+    font-style: italic;
+    font-size: clamp(18px, 4.6vw, 24px);
+    line-height: 1;
+    letter-spacing: .02em;
+    color: var(--accent, var(--viva-lime, var(--text-sub, currentColor)));
+    text-shadow: 0 0 18px rgba(132,189,0,.18);
+  }
+  .laraclv-signature .laraclv-version {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    opacity: .72;
+  }
+  @media (max-width: 480px) {
+    .laraclv-signature { margin-top: 22px; }
+    .laraclv-signature .laraclv-by { font-size: 20px; }
+    .laraclv-signature .laraclv-version { font-size: 9px; }
+  }
+</style>
+
 </head>
 <body>
 <!-- Viva Aerobus orbs -->
@@ -3793,5 +3833,11 @@ function importarJSON(event){
 
 initLocalData();
 </script>
+
+<div class="laraclv-signature" aria-label="Firma laraclv versión 2.4.0">
+  <span class="laraclv-by">by laraclv</span>
+  <span class="laraclv-version">v 2.4.0</span>
+</div>
+
 </body>
 </html>
